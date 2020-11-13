@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+
+
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+
+
+
+        <link rel="stylesheet" href="/static/css/home.css">
+
+
+
+        <title>Header Tag</title>
+    </head>
+    <body >
+    <div class="bg-img">
+        <div class="details">
+            <p class="title">Covid Map</p>
+            <h4 class=""title-details>
+                COVID-19 can affect anyone, and the disease can cause symptoms<br>
+                ranging from mild to very severe. For some other illnesses caused<br>
+                by respiratory viruses (such as influenza), some people may be more<br>
+                likely to have severe illness than others because they have characteristics<br>
+                or medical conditions that increase their risk.
+            </h4>
+        </div>
+
+     <form action="http://localhost:5000/result" method="POST">
+         <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Select a country for checking the details of covid
+          </button>
+              <div class="dropdown-menu">
+               {%for k in c%}
+
+
+                   <input type="submit" name="country" class="dropdown-item" value={{k}}>
+
+
+                {%endfor%}
+              </div>
+
+
+     </div>
+
+
+
+
+     </form>
+    </div>
+      <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

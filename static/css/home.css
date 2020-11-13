@@ -1,0 +1,58 @@
+
+
+.bg-img{
+         background-image: url("https://images.unsplash.com/photo-1584931423298-c576fda54bd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+
+         min-height: 800px;
+         background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+
+}
+.dropdown {
+
+  position: absolute;
+  top:100px;
+  left : 10px;
+  right: 25px;
+  margin: 210px;
+  max-width: 5000px;
+  padding: 18px;
+  background-color:#00FFFF;
+
+}
+.btn{
+width:850px;
+height:50px;
+background-color:#B22222;
+
+
+}
+.details{
+    color : #00FFFF;
+
+
+     font-family: "Times New Roman", Times, serif;
+     font-style: italic;
+     text-align : center;
+
+}
+.title{
+   font-size : 30px;
+
+}
+.dropdown-menu{
+   width:850px;
+
+  background-color:#F0E68C;
+  max-height:250px;/* you can change as you need it */
+   overflow:auto;/* to get scroll */
+
+
+
+}
+
+
+

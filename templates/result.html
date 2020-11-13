@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html>
+
+        <title>Student</title>
+        <head>
+            <link rel="stylesheet" href="/static/css/result.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+        </head>
+        <body>
+        <form action="http://localhost:5000/">
+            <input type="submit" class="btn btn-primary" name="home" value='Home'>
+
+        </form>
+
+        <h1 class="heading">You Selected {{res}}</h1>
+
+        <div class="container">
+            <table class="table">
+
+
+            <tr>
+                <td class="head">Name of Continent : </td>
+                <td class="body">{{continent}}</td>
+
+            </tr>
+            <tr>
+                <td class="head">No of Recovered : </td>
+                <td class="body">{{recovered}}</td>
+
+            </tr>
+            <tr>
+                <td class="head">Total Number of cases in {{res}} : </td>
+                <td class="body">{{total}}</td>
+
+            </tr>
+            <tr>
+                <td class="head">Date : </td>
+                <td class="body">{{day}}</td>
+
+            </tr>
+            <tr>
+                <td class="head">No of Active Cases in {{res}} : </td>
+                <td class="body">{{active}}</td>
+
+            </tr>
+            <tr>
+                <td class="head">Total Number of deaths in {{res}}:</td>
+                <td class="body">{{deaths}}</td>
+
+            </tr>
+        </table>
+
+
+
+
+        </div>
+
+
+
+
+
+        </body>
+    </html>
